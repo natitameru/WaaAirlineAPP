@@ -11,10 +11,11 @@
 <h:body>
 		<h1>All flights</h1>
 
-			<h:dataTable value="#{flightService.findAll()}" var="f">
+			<h:dataTable value="#{flightService.findAll()}" var="f" editable="true">
     			<h:column>
     				<f:facet name="header">Flight Number</f:facet>
-    				#{f.getFlightnr()}
+    				
+    				<h:outputText value="#{f.getFlightnr()}"/>
     			</h:column>
 
     			<h:column>

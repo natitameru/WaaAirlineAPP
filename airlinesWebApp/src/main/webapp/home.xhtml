@@ -14,8 +14,15 @@
 			<h1>Welcome to Simple airlines</h1>
 		    <h:commandButton action = "#{pageNavigatorController.displayFlight}"  
 		    value = "Display All Flight" /> 
+		     <h:commandButton action = "#{pageNavigatorController.flightByDateTime}"  
+		    value = "Display All Flight by date-time" /> 
+		     <h:commandButton action = "#{pageNavigatorController.byDeparture}"  
+		    value = "Flight By Departure" /> 
+		     <h:commandButton action = "#{pageNavigatorController.byDestination}"  
+		    value = "Flight by Destination" /> 
 		     <h:commandButton action = "#{pageNavigatorController.airlineModule}"  
 		    value = "Airline Module" /> 
+		   
 		</h:panelGrid>
 		
 		 

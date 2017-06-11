@@ -23,5 +23,16 @@ public class PageNavigatorController {
 	public String newAirline(){
 		return "createAirline";
 	}
-	
+	public String flightByDateTime(){
+		return "date-time";
+	}
+	public String allFlightByDateTime(){
+		return "allFlightByDataTime";
+	}
+	public String byDestination(){
+		return "bydestination";
+	}
+	public String byDeparture(){
+		return "bydeparture";
+	}
 }
