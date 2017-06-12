@@ -9,9 +9,20 @@
 	<title>Welcome to Simple airlines</title>
 </h:head>
 <h:body>
-		<h1>All flights</h1>
-
-			<h:dataTable value="#{flightService.findByDepartureBetween(flightHelp.datetimeFrom,flightHelp.datetimeTo)}" var="f" editable="true">
+		<h1>List By Destination Airport</h1>
+		<h:form>
+		<h:panelGrid columns="2">
+		Enter Departure Airport 
+         <h:inputText id = "from" value = "#{flightHelper.departure}"
+            label = "destination " >
+           
+         </h:inputText>
+         <h:commandButton value = "submit" action = "#{flightHelper.getFlightsDeparture()}" >
+           <f:ajax execute = "@form" render = "display" />
+           </h:commandButton>
+           </h:panelGrid>
+  </h:form>
+  <h:dataTable id="display" value="#{flightHelper.getFlightsDeparture()}" var="f" >
     			<h:column>
     				<f:facet name="header">Flight Number</f:facet>
     				
@@ -51,7 +62,5 @@
     			</h:column>
 
     		</h:dataTable>
-
-
 </h:body>
 </html>

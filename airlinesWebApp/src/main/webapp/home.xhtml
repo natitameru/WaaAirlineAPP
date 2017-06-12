@@ -9,19 +9,23 @@
 	<title>Simple airlines</title>
 </h:head>
 <h:body>
+<h1>Welcome to Simple airlines</h1>
 	<h:form>
-		<h:panelGrid columns="1">
-			<h1>Welcome to Simple airlines</h1>
+		<h:panelGrid columns="6">
+			
+			<h:commandButton action = "#{pageNavigatorController.airlineModule}"  
+		    value = "Airline Module" /> 
+			<h:commandButton action = "#{pageNavigatorController.airlineModule}"  
+		    value = "Airline Module" /> 
 		    <h:commandButton action = "#{pageNavigatorController.displayFlight}"  
 		    value = "Display All Flight" /> 
 		     <h:commandButton action = "#{pageNavigatorController.flightByDateTime}"  
 		    value = "Display All Flight by date-time" /> 
 		     <h:commandButton action = "#{pageNavigatorController.byDeparture}"  
 		    value = "Flight By Departure" /> 
-		     <h:commandButton action = "#{pageNavigatorController.byDestination}"  
+		     <h:commandButton action = "#{pageNavigatorController.destination}"  
 		    value = "Flight by Destination" /> 
-		     <h:commandButton action = "#{pageNavigatorController.airlineModule}"  
-		    value = "Airline Module" /> 
+		     
 		   
 		</h:panelGrid>
 		

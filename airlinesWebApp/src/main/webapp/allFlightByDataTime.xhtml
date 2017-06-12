@@ -11,7 +11,7 @@
 <h:body>
 		<h1>All flights</h1>
 
-			<h:dataTable value="#{flightService.findByDepartureBetween(flightHelp.datetimeFrom,flightHelp.datetimeTo)}" var="f" editable="true">
+			<h:dataTable value="#{flightService.findAll()}" var="f" >
     			<h:column>
     				<f:facet name="header">Flight Number</f:facet>
     				

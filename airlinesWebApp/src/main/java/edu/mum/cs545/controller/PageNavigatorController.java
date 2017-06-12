@@ -32,7 +32,11 @@ public class PageNavigatorController {
 	public String byDestination(){
 		return "bydestination";
 	}
+	public String destination(){
+		return "destination";
+	}
 	public String byDeparture(){
 		return "bydeparture";
 	}
+	
 }
